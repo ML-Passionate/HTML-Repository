@@ -1,13 +1,301 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro site versionado através de repositório</title>
+    <title>HTML Commands Repository</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .example {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 3px solid #ccc;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bem-vindo ao site de teste</h1>
-    <hr>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cum modi illo accusamus alias, enim maxime doloremque laborum eos excepturi nulla nostrum! Explicabo at consectetur molestiae laboriosam, ab veritatis quaerat?</p>
+
+    <h1>HTML Commands Repository</h1>
+    <p>This page serves as a repository of common HTML commands, their descriptions, and examples.</p>
+
+    <h2>Basic Structure</h2>
+    <ul>
+        <li>
+            <code>&lt;!DOCTYPE html&gt;</code>
+            <p>Defines the document type and version of HTML.</p>
+            <div class="example">
+                <code>&lt;!DOCTYPE html&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;html&gt;</code>
+            <p>The root element of an HTML document.</p>
+            <div class="example">
+                <code>&lt;html&gt;&lt;/html&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;head&gt;</code>
+            <p>Contains meta-information about the document, such as title, styles, and scripts.</p>
+            <div class="example">
+                <code>&lt;head&gt;&lt;title&gt;Page Title&lt;/title&gt;&lt;/head&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;body&gt;</code>
+            <p>Contains the content of the document that is visible to the user.</p>
+            <div class="example">
+                <code>&lt;body&gt;&lt;h1&gt;Hello World&lt;/h1&gt;&lt;/body&gt;</code>
+            </div>
+        </li>
+    </ul>
+
+    <h2>Text Formatting</h2>
+    <ul>
+        <li>
+            <code>&lt;h1&gt; to &lt;h6&gt;</code>
+            <p>Defines headings, with <code>&lt;h1&gt;</code> being the most important and <code>&lt;h6&gt;</code> the least.</p>
+            <div class="example">
+                <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code><br>
+                <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;p&gt;</code>
+            <p>Defines a paragraph.</p>
+            <div class="example">
+                <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;strong&gt;</code>
+            <p>Defines important text, typically displayed in bold.</p>
+            <div class="example">
+                <code>&lt;strong&gt;This text is important.&lt;/strong&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;em&gt;</code>
+            <p>Defines emphasized text, typically displayed in italics.</p>
+            <div class="example">
+                <code>&lt;em&gt;This text is emphasized.&lt;/em&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;br&gt;</code>
+            <p>Inserts a single line break.</p>
+            <div class="example">
+                <code>This is a line of text.&lt;br&gt;This is another line.</code>
+            </div>
+        </li>
+    </ul>
+
+    <h2>Links and Images</h2>
+    <ul>
+        <li>
+            <code>&lt;a&gt;</code>
+            <p>Defines a hyperlink.</p>
+            <div class="example">
+                <code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;img&gt;</code>
+            <p>Embeds an image in the document.</p>
+            <div class="example">
+                <code>&lt;img src="image.jpg" alt="Description of image"&gt;</code>
+            </div>
+        </li>
+    </ul>
+
+    <h2>Lists</h2>
+    <ul>
+        <li>
+            <code>&lt;ul&gt;</code>
+            <p>Defines an unordered list.</p>
+            <div class="example">
+                <code>&lt;ul&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                &lt;/ul&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;ol&gt;</code>
+            <p>Defines an ordered list.</p>
+            <div class="example">
+                <code>&lt;ol&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br>
+                &lt;/ol&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;li&gt;</code>
+            <p>Defines a list item.</p>
+            <div class="example">
+                <code>&lt;li&gt;List item&lt;/li&gt;</code>
+            </div>
+        </li>
+    </ul>
+
+    <h2>Forms</h2>
+    <ul>
+        <li>
+            <code>&lt;form&gt;</code>
+            <p>Defines a form for user input.</p>
+            <div class="example">
+                <code>&lt;form action="/submit" method="post"&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" name="username"&gt;<br>
+                &nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;<br>
+                &lt;/form&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;input&gt;</code>
+            <p>Defines an input field.</p>
+            <div class="example">
+                <code>&lt;input type="text" name="username" placeholder="Enter your username"&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;button&gt;</code>
+            <p>Defines a clickable button.</p>
+            <div class="example">
+                <code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code>
+            </div>
+        </li>
+    </ul>
+
+    <h2>Tables</h2>
+    <ul>
+        <li>
+            <code>&lt;table&gt;</code>
+            <p>Defines a table.</p>
+            <div class="example">
+                <code>&lt;table&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 1&lt;/th&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 2&lt;/th&gt;<br>
+                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 1&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 2&lt;/td&gt;<br>
+                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                &lt;/table&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;tr&gt;</code>
+            <p>Defines a table row.</p>
+            <div class="example">
+                <code>&lt;tr&gt;&lt;td&gt;Data&lt;/td&gt;&lt;/tr&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;td&gt;</code>
+            <p>Defines a table cell.</p>
+            <div class="example">
+                <code>&lt;td&gt;Data&lt;/td&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;th&gt;</code>
+            <p>Defines a table header cell.</p>
+            <div class="example">
+                <code>&lt;th&gt;Header&lt;/th&gt;</code>
+            </div>
+        </li>
+    </ul>
+
+    <h2>Semantic Elements</h2>
+    <ul>
+        <li>
+            <code>&lt;header&gt;</code>
+            <p>Defines a header for a document or section.</p>
+            <div class="example">
+                <code>&lt;header&gt;<br>
+                &nbsp;&nbsp;&lt;h1&gt;Website Title&lt;/h1&gt;<br>
+                &lt;/header&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;footer&gt;</code>
+            <p>Defines a footer for a document or section.</p>
+            <div class="example">
+                <code>&lt;footer&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Copyright 2023&lt;/p&gt;<br>
+                &lt;/footer&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;section&gt;</code>
+            <p>Defines a section in a document.</p>
+            <div class="example">
+                <code>&lt;section&gt;<br>
+                &nbsp;&nbsp;&lt;h2&gt;Section Title&lt;/h2&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Section content.&lt;/p&gt;<br>
+                &lt;/section&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;article&gt;</code>
+            <p>Defines an independent, self-contained content.</p>
+            <div class="example">
+                <code>&lt;article&gt;<br>
+                &nbsp;&nbsp;&lt;h2&gt;Article Title&lt;/h2&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Article content.&lt;/p&gt;<br>
+                &lt;/article&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;nav&gt;</code>
+            <p>Defines navigation links.</p>
+            <div class="example">
+                <code>&lt;nav&gt;<br>
+                &nbsp;&nbsp;&lt;a href="/home"&gt;Home&lt;/a&gt;<br>
+                &nbsp;&nbsp;&lt;a href="/about"&gt;About&lt;/a&gt;<br>
+                &lt;/nav&gt;</code>
+            </div>
+        </li>
+    </ul>
+
+    <h2>Other Elements</h2>
+    <ul>
+        <li>
+            <code>&lt;div&gt;</code>
+            <p>Defines a division or section in a document.</p>
+            <div class="example">
+                <code>&lt;div&gt;This is a div element.&lt;/div&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;span&gt;</code>
+            <p>Defines a small section of text within a line.</p>
+            <div class="example">
+                <code>&lt;p&gt;This is a &lt;span style="color:red;"&gt;red&lt;/span&gt; word.&lt;/p&gt;</code>
+            </div>
+        </li>
+        <li>
+            <code>&lt;iframe&gt;</code>
+            <p>Embeds another HTML page within the current page.</p>
+            <div class="example">
+                <code>&lt;iframe src="https://www.example.com" width="300" height="200"&gt;&lt;/iframe&gt;</code>
+            </div>
+        </li>
+    </ul>
+
 </body>
 </html>
